@@ -122,7 +122,7 @@ public class Aims_phucth {
         System.out.println("Enter the title of the media:");
         String title = scanner.nextLine();
         Media_phucth media = store.searchByTitle(title);
-
+        
         if (media != null) {
             System.out.println(media.toString());
             mediaDetailsMenu();

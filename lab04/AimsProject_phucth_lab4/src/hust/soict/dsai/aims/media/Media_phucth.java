@@ -2,20 +2,13 @@ package hust.soict.dsai.aims.media;
 
 import java.util.Comparator;
 
-public abstract class Media_phucth implements Comparable<Media_phucth> {
-	@Override
-	public int compareTo(Media_phucth otherMedia) {
-        // So sánh theo tiêu đề
-        return this.title.compareTo(otherMedia.getTitle());
-    }
-	
+public class Media_phucth {
 	
 	public static final Comparator<Media_phucth> COMPARE_BY_TITLE_COST = 
 			new MediaComparatorByTitleCost();
 	
 	public static final Comparator<Media_phucth> COMPARE_BY_COST_TITLE = 
 			new MediaComparatorByCostTitle();
-	
 	
 	private int id;
 	private String title;
